@@ -1,0 +1,292 @@
+@font-face {
+  font-family: 'PlusJakarta';
+  src: url('PlusJakartaSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url('WorkSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  font-family: 'WorkSans', sans-serif;
+  background: #07122F;
+  color: #d8d8d8;
+}
+
+a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, nav a, .btn-solid, .btn-outline {
+  font-family: 'PlusJakarta', sans-serif;
+  color: #fafafa;
+}
+
+p {
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0 0 20px;
+}
+
+ul, li {
+  padding-left: 50px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.main-header {
+  background-color: #07122F;
+  padding: 10px ;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 10px;
+}
+
+nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 140px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-solid, .btn-outline {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: 'PlusJakarta', sans-serif;
+}
+
+.btn-solid {
+  background-color: #0B34AC;
+  border: none;
+  color: #fafafa;
+}
+
+.btn-outline {
+  border: 1.5px solid #fafafa;
+  background: transparent;
+  color: #fafafa;
+}
+
+.hero {
+  padding: 100px ;
+  text-align: center;
+  background-image: url('hero_background.png');
+  background-size: cover;
+  background-position: center;
+  line-height: 150%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#about-netnook h2 {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section.dark {
+  background-color: #07122F;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.text-block {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.text-block a.btn-solid {
+  align-self: start; 
+}
+
+.text-block ul {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.text-block ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-block {
+  flex: 1;
+  min-width: 400px;
+}
+
+#process h2 {
+  font-size: 48px;
+  line-height: 1.4;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 30px auto 0;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.card h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+#services .card h3 img { 
+  width: 72px;
+  height: 72px;
+}
+
+.card p:last-child {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.process-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+  align-items: flex-start;
+  padding: 60px 20px;
+}
+
+.process-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.process-steps {
+  flex: 2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.process-steps .card h3:first-child {
+  font-family: 'WorkSans', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.process-steps .card h3 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.process-steps .card p {
+  margin-top: 10px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #17181b;
+  color: #07122F;
+  font-family: 'WorkSans', sans-serif;
+}
+
+.footer {
+  background-color: #0B34AC;
+  padding: 20px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-top {
+  margin-bottom: 20px;
+}
+
+.footer-contact-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
